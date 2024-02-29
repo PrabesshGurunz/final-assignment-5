@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final assigment</title>
+<img src="https://play-lh.googleusercontent.com/Tfz8__HEHLp9NuEXZp6T9c9HIgGpSg8MpNbMZqX8BVVfF35rQPyznTP55fm3Ff7ShpM=w600-h300-pc0xffffff-pd" data-deferred="1" class="rg_i Q4LuWd" jsname="Q4LuWd" width="318" height="159" alt="Glorious Academy : Chitwan - Apps on Google Play" data-iml="794.1999999999534" data-atf="true"><br>
+<link rel="stylesheet" href="assigment.css">
+<script src="assigment.js"></script>
+</head>
+<body>
+   
+    
+<form id="myForm">
+    <fieldset> 
+        <legend>
+            <h3>CANDIDATE REGISTRATION FORM</h3>
+        </legend>
+<br>
+    <label for="name"> Frist Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your first Name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="name" placeholder="Enter your last name " required>
+  <br>  <br>
+    
+
+    <label for="date-of-birth">Date-of-Birth:</label>  
+            <input type="date" placeholder="date-of-birth" id="dob" required><br><br>
+
+            <label for="ph-number"> Phone number:</label>
+            
+            <input type="tel" placeholder="Enter your Phone Number" pattern="[0-9]{10}" id="ph-number" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br>
+            <label for="gpa">Optained GPA :</label>  
+            <input type="number" step="0.01" id="gpa" required></input><br><br>
+
+            <label for="province"> Select Province:</label>
+            <select name="province" id="province" required|>
+                <option value=""></option>
+                <option value="province 1">Province 1</option>
+                <option value="madesh pradesh">Madesh Pradesh</option>
+                <option value="bagmati pradesh">Bagmati Pradesh</option>
+                <option value="gandaki pradesh">Gandaki Pradesh</option>
+                <option value="lumbini pradesh">Lumbini Pradesh</option>
+                <option value="karnali pradesh">karnali Pradesh</option>
+                <option value="sudur pashchim pradesh">Sudur Pashchim Pradesh</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label for="city-name">City Name:</label> 
+            <input type="text" placeholder="City Name" id="city-name" required><br><br>
+
+            <label for="pre-school">Previous School :</label>
+            <input type="text" placeholder="Previous School Name" id="pre-school" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br>
+            <label for="courses">Choose Courses:</label>
+            <select name="courses" id="courses" required>
+            <option value=""></option>
+            <option value="bcs">BCS</option>
+            <option value="bscit">BSCIT</option>
+            <option value="mbbs">MBBS</option>
+            <option value="btech">BTECH</option>
+        </select><br><br>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</fieldset>
+</form><br><br><br>
+
+<table id="dataTable" border="4">
+    <tr>
+        <th>Frist Name</th>
+        <th>Last Name</th>
+        <th>Date-of-Birth</th>
+        <th>Phone-Number</th>
+        <th>GPA</th>
+        <th>Province</th>
+        <th>City-Name</th>
+        <th>previous-school</th>
+        <th>courses</th>
+    </tr>
+</table>
+
+
+   
+
+
+</body>
+</html>
