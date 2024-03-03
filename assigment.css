@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-style: solid;
+    border-color: gold;
+    background-color: blue;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: red;
+}
+#myForm{
+    text-align: center;
+    font-size: larger;
+    font-weight: 200;
+}
+img{
+    display: block;
+    margin: auto;
+}
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+  
+ }
+ 
+    
+ h3{
+    color: rgb(0, 0, 0);
+ }
+h2{
+    color: red;
+}
+body{
+    background-image: linear-gradient(red,green,);
+}
+ 
