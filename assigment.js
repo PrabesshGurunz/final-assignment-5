@@ -1,7 +1,7 @@
 function submitForm() {
     var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var age = document.getElementById("age").value;
+    var lname = document.getElementById("lname").value;
+    
     var dateofBirth = document.getElementById("dob").value;
     var phoneNumber = document.getElementById("ph-number").value;
    var gpa = document.getElementById("gpa").value;
@@ -22,19 +22,19 @@ function submitForm() {
     var cell7 = row.insertCell(6);
     var cell8 = row.insertCell(7);
     var cell9 = row.insertCell(8);
-    var cell10 = row.insertCell(9);
+    
 
 
     cell1.innerHTML = name;
-    cell2.innerHTML = email;
-    cell3.innerHTML = age;
-    cell4.innerHTML = dateofBirth;
-    cell5.innerHTML = phoneNumber;
-    cell6.innerHTML = gpa;
-    cell7.innerHTML = province;
-    cell8.innerHTML = cityName;
-   cell9.innerHTML = previousSchool;
-    cell10.innerHTML = courses;
+    cell2.innerHTML = lname;
+    
+    cell3.innerHTML = dateofBirth;
+    cell4.innerHTML = phoneNumber;
+    cell5.innerHTML = gpa;
+    cell6.innerHTML = province;
+    cell7.innerHTML = cityName;
+   cell8.innerHTML = previousSchool;
+    cell9.innerHTML = courses;
 
     document.getElementById("myForm").reset();
 }
