@@ -3,73 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Final assigment</title>
-<img src="https://play-lh.googleusercontent.com/Tfz8__HEHLp9NuEXZp6T9c9HIgGpSg8MpNbMZqX8BVVfF35rQPyznTP55fm3Ff7ShpM=w600-h300-pc0xffffff-pd" data-deferred="1" class="rg_i Q4LuWd" jsname="Q4LuWd" width="318" height="159" alt="Glorious Academy : Chitwan - Apps on Google Play" data-iml="794.1999999999534" data-atf="true"><br>
+<title>Registration Form</title>
+  
+<img data-visualcompletion="media-vc-image" alt="No photo description available." class="x1bwycvy x193iq5w x4fas0m x19kjcj4" referrerpolicy="origin-when-cross-origin" src="https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/347590403_742272577901736_7374066776684262358_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=AZ_DCnw7vnEAX8K9eDw&amp;_nc_ht=scontent.fktm16-1.fna&amp;oh=00_AfB0NWc6VrS98p2I4ydvL7pJx7CtT5OgxgdYMWl47R735A&amp;oe=65EC680A">
 <link rel="stylesheet" href="assigment.css">
 <script src="assigment.js"></script>
 </head>
 <body>
-   
+
+<div class="container">
     
-<form id="myForm">
-    <fieldset> 
-        <legend>
-            <h3>CANDIDATE REGISTRATION FORM</h3>
-        </legend>
-<br>
-    <label for="name"> Frist Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your first Name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br>
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="name" placeholder="Enter your last name " required>
-  <br>  <br>
-    
+  <h1>Registration Form</h1><br><br>
 
-    <label for="date-of-birth">Date-of-Birth:</label>  
-            <input type="date" placeholder="date-of-birth" id="dob" required><br><br>
+  <form action="#" method="post" id="myForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <select>
+        <option>+977</option>
+        <option>+1</option>
+        <option>+7</option>
+        <option>+61</option>
+        <option>+43</option>
+        <option>+91</option>
 
-            <label for="ph-number"> Phone number:</label>
-            
-            <input type="tel" placeholder="Enter your Phone Number" pattern="[0-9]{10}" id="ph-number" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br>
-            <label for="gpa">Optained GPA :</label>  
-            <input type="number" step="0.01" id="gpa" required></input><br><br>
-
-            <label for="province"> Select Province:</label>
-            <select name="province" id="province" required|>
-                <option value=""></option>
-                <option value="province 1">Province 1</option>
-                <option value="madesh pradesh">Madesh Pradesh</option>
-                <option value="bagmati pradesh">Bagmati Pradesh</option>
-                <option value="gandaki pradesh">Gandaki Pradesh</option>
-                <option value="lumbini pradesh">Lumbini Pradesh</option>
-                <option value="karnali pradesh">karnali Pradesh</option>
-                <option value="sudur pashchim pradesh">Sudur Pashchim Pradesh</option>
-            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-            <label for="city-name">City Name:</label> 
-            <input type="text" placeholder="City Name" id="city-name" required><br><br>
-
-            <label for="pre-school">Previous School :</label>
-            <input type="text" placeholder="Previous School Name" id="pre-school" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br>
-            <label for="courses">Choose Courses:</label>
-            <select name="courses" id="courses" required>
-            <option value=""></option>
-            <option value="bcs">BCS</option>
-            <option value="bscit">BSCIT</option>
-            <option value="mbbs">MBBS</option>
-            <option value="btech">BTECH</option>
-        </select><br><br>
-
-    <button type="button" onclick="submitForm()">Submit</button>
-</fieldset>
-</form><br><br><br>
-
-<table id="dataTable" border="4">
+    </select>
+    <input type="tel" placeholder="98......." pattern="[0-9]{10}" id="ph-number" name="ph-number" required>
+    </div>
+    <div class="form-group">
+      <label for="gpa">Obtained GPA:</label>
+      <input type="number" step="0.01" id="gpa" required placeholder="Enter GPA" name="gpa">
+    </div>
+    <div class="form-group">
+      <label for="province">Province:</label>
+      <select name="province" id="province" name="province" required>
+        <option value=""></option>
+        <option value="koshi">Koshi</option>
+        <option value="madesh pradesh">Madesh Pradesh</option>
+        <option value="bagmati pradesh">Bagmati Pradesh</option>
+        <option value="gandaki pradesh">Gandaki Pradesh</option>
+        <option value="lumbini pradesh">Lumbini Pradesh</option>
+        <option value="karnali pradesh">karnali Pradesh</option>
+        <option value="sudur pashchim pradesh">Sudur Pashchim Pradesh</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="city">City Name:</label>
+      <input type="text" id="city-name" name="city" placeholder="Enter your city name" required>
+    </div>
+    <div class="form-group">
+      <label for="school">Previous School Name:</label>
+      <input type="text" id="pre-school" name="school" required>
+    </div>
+    <div class="form-group">
+      <label for="courses">Courses:</label>
+      <select name="courses" id="courses" placeholder="Choose Courses" name="courses" required>
+        <option value=""></option>
+        <option value="bit">BIT</option>
+        <option value="bca">BCA</option>
+        <option value="bscit">BSCIT</option>
+        <option value="bba">BBA</option>
+        <option value="btech">BTECH</option>
+        <option value="bbs">BBS</option>
+        <option value="b.ed">B.ED</option>
+    </select>
+    </div>
+    <input type="submit" value="Submit" onclick="submitForm()">
+  </form>
+</div><br><br><br>
+<h2>Your information will filled in the above table</h2><br><br>
+<table id="dataTable" border="2">
     <tr>
-        <th>Frist Name</th>
-        <th>Last Name</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
         <th>Date-of-Birth</th>
         <th>Phone-Number</th>
         <th>GPA</th>
@@ -78,6 +100,9 @@
         <th>previous-school</th>
         <th>courses</th>
     </tr>
-</table>
+</table><br><br><br>
+
+
+
 </body>
 </html>
